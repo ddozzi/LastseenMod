@@ -100,11 +100,16 @@ public class LastseenCommand implements ICommand {
                 if (Lastloginint > Lastlogoutint) {
                 	player.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "§1§l[§9§lLASTSEEN§1§l] " + "§6" + PlayerDisplayname + " §9is currently §6online!"));
                 } else if (Lastlogoutint > Lastloginint) {
+                	
+                	try {
                 	 String Lastgame = ((JsonObject) APIUtil.getJSONResponse("https://api.hypixel.net/player?key=" + key +"&uuid=" + uuid).get("player")).get("mostRecentGameType").getAsString();
                      String Normalizer = Lastgame.toLowerCase();
                      String Game = Normalizer.substring(0, 1).toUpperCase() + Normalizer.substring(1);
                 	 player.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "§1[§9§lLASTSEEN§1] " + "§6" + PlayerDisplayname + " §9was last seen in " + "§6" + Game + " §9on " + "§6" + LastLoginDate));
-            
+                	} catch(NullPointerException e) {
+                		String Game = "unknown";
+                   	 	player.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "§1[§9§lLASTSEEN§1] " + "§6" + PlayerDisplayname + " §9was last seen in " + "§6" + Game + " §9on " + "§6" + LastLoginDate));
+                	}
                 }
                 
                 
