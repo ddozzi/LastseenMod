@@ -7,6 +7,10 @@ A simple mod to check when a player was last online.
 - /ls setkey [api key] | get an api key using /api new in the hypixel lobby
 - /ls [username] | find when specified user was last seen
 
+## Credits:
+
+- DDOZZI - Developing the mod
+- FrozenFruit - Consistently reporting bugs, allowing for a better experience
 
 
 ## Upcoming Updates 
