@@ -10,7 +10,7 @@ A simple mod to check when a player was last online.
 ## Credits:
 
 - DDOZZI - Developing the mod
-- FrozenFruit - Consistently reporting bugs, allowing for a better experience
+- FrozenFruit - Consistently reporting bugs, allowing for a better experience 
 
 
 ## Upcoming Updates 
