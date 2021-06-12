@@ -1,6 +1,10 @@
 # LastseenMod
-
 A simple mod to check when a player was last online.
+
+ <a href="https://github.com/ddozzi/LastseenMod/releases" target="_blank">
+    <img alt="downloads" src="https://img.shields.io/github/downloads/ddozzi/LastseenMod/total?color=4166f5&style=flat-square" />
+  </a>
+
 
 ## Usage:
 
